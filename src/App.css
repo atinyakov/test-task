@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 25px auto 25px;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: grid;
+}
+
+.list-item {
+  list-style: "";
+  min-height: 25px;
+}
+
+.list-item:nth-child(2n) {
+  background-color: antiquewhite;
+}
