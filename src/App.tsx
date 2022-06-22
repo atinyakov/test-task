@@ -61,7 +61,7 @@ function App() {
   return (
     <div className="App" ref={containerRef}>
       <button disabled={start - 5 < 0} onClick={scrollUp}>
-        Scroll up
+        Scroll up ({start} items)
       </button>
       <ul className="container" onWheel={onWheel}>
         {[...data].slice(start, end).map((el, index) => (
@@ -69,7 +69,7 @@ function App() {
         ))}
       </ul>
       <button disabled={end + 5 > data.length - 1} onClick={scrollDown}>
-        Scroll Down
+        Scroll Down ({data.length - 1 - end} items)
       </button>
     </div>
   );
